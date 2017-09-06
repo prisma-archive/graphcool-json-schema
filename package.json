@@ -1,0 +1,16 @@
+{
+  "name": "graphcool-json-schema",
+  "version": "0.1.0",
+  "main": "dist/definition.js",
+  "typings": "dist/definition.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rm -rf dist && tsc -d"
+  },
+  "devDependencies": {
+    "typescript": "^2.5.2"
+  }
+}
