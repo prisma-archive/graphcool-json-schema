@@ -8,7 +8,7 @@ JSON schema of graphcool.yml files
 You can use the following URL for the current JSON schema file:
 
 ```
-
+https://raw.githubusercontent.com/graphcool/graphcool-json-schema/master/src/schema.json
 ```
 
 ### Typescript
