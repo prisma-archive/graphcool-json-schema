@@ -3,6 +3,7 @@ export interface GraphcoolDefinition {
   permissions: Array<Permission>
   functions: FunctionDefinition[]
   rootTokens: string[]
+  modules: {[name: string]: string}
 }
 
 export interface Permission {
@@ -50,4 +51,4 @@ export interface Header {
   value: string
 }
 
-export type FunctionType = 'operationBefore' | 'operationAfter' | 'subscription' | 'httpRequest' | 'httpResponse'
+export type FunctionType = 'operationBefore' | 'operationAfter' | 'subscription' | 'httpRequest' | 'httpResponse' | 'resolver'

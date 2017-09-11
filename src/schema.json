@@ -71,7 +71,7 @@
             "operationBefore",
             "operationAfter",
             "subscription",
-            "schemaExtension"
+            "resolver"
           ]
         },
         "operation": {
@@ -152,6 +152,10 @@
       "items": {
         "$ref": "#/definitions/permission"
       }
+    },
+    "modules": {
+      "description": "Modules",
+      "type": "object"
     }
   },
   "additionalProperties": false,
