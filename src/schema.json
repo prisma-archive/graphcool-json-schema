@@ -159,6 +159,10 @@
     "modules": {
       "description": "Modules",
       "type": "object"
+    },
+    "custom": {
+      "description": "Custom field to use in variable interpolations with ${self:custom.field}",
+      "type": "object"
     }
   },
   "additionalProperties": false,

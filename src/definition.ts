@@ -4,6 +4,7 @@ export interface GraphcoolDefinition {
   functions: {[name: string]: FunctionDefinition}
   rootTokens: string[]
   modules: {[name: string]: string}
+  custom: any
 }
 
 export interface Permission {
