@@ -24,6 +24,9 @@
                       "properties": {
                         "src": {
                           "type": "string"
+                        },
+                        "environment": {
+                          "type": "object"
                         }
                       },
                       "required": [

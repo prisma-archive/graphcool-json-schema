@@ -32,6 +32,7 @@ export interface FunctionHandler {
   webhook?: FunctionHandlerWebhookSource
   code?: {
     src: string
+    environment?: {[envVar: string]: string}
   }
 }
 
