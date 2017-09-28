@@ -1,6 +1,6 @@
 export interface GraphcoolDefinition {
   types: string
-  permissions: Array<Permission>
+  permissions?: Array<Permission>
   functions?: {[name: string]: FunctionDefinition}
   rootTokens?: string[]
   modules?: {[name: string]: string}
