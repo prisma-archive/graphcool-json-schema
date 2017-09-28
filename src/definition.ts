@@ -18,7 +18,6 @@ export interface Permission {
 }
 
 export interface FunctionDefinition {
-  name: string
   isEnabled: boolean
   handler: FunctionHandler
   type: FunctionType
