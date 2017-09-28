@@ -8,13 +8,13 @@ export interface GraphcoolDefinition {
 }
 
 export interface Permission {
-  description: string
+  description?: string
   isEnabled?: boolean
   // (modelName.(create|read|list|update|delete) | relationName.(connect|disconnect))
   operation: string
-  authenticated: boolean
+  authenticated?: boolean
   query?: string
-  fields: string[]
+  fields?: string[]
 }
 
 export interface FunctionDefinition {
@@ -45,7 +45,7 @@ export type FunctionHandlerWebhookSource = string | FunctionHandlerWebhookWithHe
 
 export interface FunctionHandlerWebhookWithHeaders {
   url: string
-  headers: Header[]
+  headers?: Header[]
 }
 
 export interface Header {
