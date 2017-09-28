@@ -18,7 +18,6 @@ export interface Permission {
 }
 
 export interface FunctionDefinition {
-  isEnabled: boolean
   handler: FunctionHandler
   type: FunctionType
   // (modelName.(create|read|list|update|delete) | relationName.(connect|disconnect))
