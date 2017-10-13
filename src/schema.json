@@ -32,6 +32,9 @@
                       "required": [
                         "src"
                       ]
+                    },
+                    {
+                      "type": "string"
                     }
                   ]
                 }

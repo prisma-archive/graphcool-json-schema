@@ -29,10 +29,12 @@ export interface FunctionDefinition {
 
 export interface FunctionHandler {
   webhook?: FunctionHandlerWebhookSource
-  code?: {
-    src: string
-    environment?: {[envVar: string]: string}
-  }
+  code?: FunctionCode | string
+}
+
+interface FunctionCode {
+  src: string
+  environment?: {[envVar: string]: string}
 }
 
 export interface FunctionHandlerWebhook {
