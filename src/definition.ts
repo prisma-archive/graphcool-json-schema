@@ -32,7 +32,7 @@ export interface FunctionHandler {
   code?: FunctionCode | string
 }
 
-interface FunctionCode {
+export interface FunctionCode {
   src: string
   environment?: {[envVar: string]: string}
 }
