@@ -82,7 +82,7 @@
         },
         "operation": {
           "type": "string",
-          "pattern": "^[A-Z][a-zA-Z0-9]*\\.(create|update|delete|read|list|connect|disconnect|operation|\\*)$"
+          "pattern": "^[A-Z][a-zA-Z0-9]*\\.(create|update|delete|read|connect|disconnect|\\*)$"
         },
         "schema": {
           "type": "string"
