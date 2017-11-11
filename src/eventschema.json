@@ -1,39 +1,32 @@
 {
     "definitions": {},
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "http://example.com/example.json",
     "title": "JSON Schema for Graphcool function events",
     "type": "object",
     "properties": {
         "data": {
-            "$id": "/properties/data",
             "type": "object",
             "title": "Event data",
             "description": "All the data passed in to the function"
         },
         "context": {
-            "$id": "/properties/context",
             "type": "object",
             "properties": {
                 "request": {
-                    "$id": "/properties/context/properties/request",
                     "type": "object",
                     "properties": {
                         "sourceIp": {
-                            "$id": "/properties/context/properties/request/properties/sourceIp",
                             "type": "string",
                             "format": "ipv4",
                             "title": "IP Address",
                             "description": "The IP Address for the source of the request."
                         },
                         "headers": {
-                            "$id": "/properties/context/properties/request/properties/headers",
                             "type": "object",
                             "title": "Request headers",
                             "description": "All request headers of the request"
                         },
                         "httpMethod": {
-                            "$id": "/properties/context/properties/request/properties/httpMethod",
                             "type": "string",
                             "title": "HTTP method",
                             "description": "The HTTP method of the request.",
@@ -44,23 +37,22 @@
                     }
                 },
                 "auth": {
-                    "$id": "/properties/context/properties/auth",
-                    "type": "object",
+                    "type": [
+                        "object",
+                        "null"
+                    ],
                     "properties": {
                         "nodeId": {
-                            "$id": "/properties/context/properties/auth/properties/nodeId",
                             "type": "string",
                             "title": "nodeId",
                             "description": "The nodeId from the Authorization token."
                         },
                         "typeName": {
-                            "$id": "/properties/context/properties/auth/properties/typeName",
                             "type": "string",
                             "title": "typeName",
                             "description": "The typeName from the Authorization token."
                         },
                         "token": {
-                            "$id": "/properties/context/properties/auth/properties/token",
                             "type": "string",
                             "title": "Authorization token",
                             "description": "The Graphcool authorization token pass in to the request."
@@ -68,31 +60,25 @@
                     }
                 },
                 "sessionCache": {
-                    "$id": "/properties/context/properties/sessionCache",
                     "type": "object",
                     "title": "Session Cache"
                 },
                 "environment": {
-                    "$id": "/properties/context/properties/environment",
                     "type": "object",
                     "title": "Environment variables"
                 },
                 "graphcool": {
-                    "$id": "/properties/context/properties/graphcool",
                     "type": "object",
                     "properties": {
                         "rootToken": {
-                            "$id": "/properties/context/properties/graphcool/properties/rootToken",
                             "type": "string",
                             "title": "Root Token",
                             "description": "The Root Token for the Graphcool service."
                         },
                         "endpoints": {
-                            "$id": "/properties/context/properties/graphcool/properties/endpoints",
                             "type": "object",
                             "properties": {
                                 "simple": {
-                                    "$id": "/properties/context/properties/graphcool/properties/endpoints/properties/simple",
                                     "type": "string",
                                     "title": "Simple Endpoint",
                                     "description": "The Simple API endpoint for the Graphcool service.",
@@ -101,7 +87,6 @@
                                     ]
                                 },
                                 "relay": {
-                                    "$id": "/properties/context/properties/graphcool/properties/endpoints/properties/relay",
                                     "type": "string",
                                     "title": "Relay Endpoint",
                                     "description": "The Relay API endpoint for the Graphcool service.",
@@ -110,7 +95,6 @@
                                     ]
                                 },
                                 "system": {
-                                    "$id": "/properties/context/properties/graphcool/properties/endpoints/properties/system",
                                     "type": "string",
                                     "title": "System Endpoint",
                                     "description": "The System API endpoint for the Graphcool cluster.",
@@ -119,7 +103,6 @@
                                     ]
                                 },
                                 "subscriptions": {
-                                    "$id": "/properties/context/properties/graphcool/properties/endpoints/properties/subscriptions",
                                     "type": "string",
                                     "title": "Subscription Endpoint",
                                     "description": "The Subscription endpoint for the Graphcool service.",
@@ -131,13 +114,11 @@
                             }
                         },
                         "projectId": {
-                            "$id": "/properties/context/properties/graphcool/properties/projectId",
                             "type": "string",
                             "title": "Project Id",
                             "description": "DEPRECATED - See serviceId."
                         },
                         "alias": {
-                            "$id": "/properties/context/properties/graphcool/properties/alias",
                             "type": [
                                 "string",
                                 "null"
@@ -146,13 +127,11 @@
                             "description": "The alias of the Graphcool service."
                         },
                         "pat": {
-                            "$id": "/properties/context/properties/graphcool/properties/pat",
                             "type": "string",
                             "title": "Root Token",
                             "description": "DEPRECATED - See rootToken."
                         },
                         "serviceId": {
-                            "$id": "/properties/context/properties/graphcool/properties/serviceId",
                             "type": "string",
                             "title": "Service Id",
                             "description": "The service id of the Graphcool service."
