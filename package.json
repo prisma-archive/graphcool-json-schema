@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "prepublish": "npm run build",
-    "build": "rm -rf dist && tsc -d; cp src/schema.json dist"
+    "build": "rm -rf dist && tsc -d; cp src/schema.json dist; cp src/eventschema.json dist"
   },
   "devDependencies": {
     "typescript": "^2.5.2"
