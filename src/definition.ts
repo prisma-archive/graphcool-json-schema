@@ -4,8 +4,8 @@ export interface GraphcoolDefinition {
   apikey?: string
   stages: StageMap
   schema?: string
-  custom?: any
   subscriptions?: SubscriptionMap
+  custom?: any
 }
 
 export interface StageMap {
