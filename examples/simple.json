@@ -1,0 +1,4 @@
+{
+  "service": "my-service-name",
+  "datamodel": "./datamodel.graphql"
+}

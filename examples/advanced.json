@@ -1,0 +1,13 @@
+{
+  "service": "my-service-name",
+  "datamodel": "./datamodel.graphql",
+  "apikey": "asdf",
+  "stages": {
+    "dev": "shared-eu-west-1",
+    "staging": "prod1",
+    "prod": "prod2"
+  },
+  "custom": {
+    "some": "custom object"
+  }
+}

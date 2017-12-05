@@ -1,16 +1,17 @@
 {
   "name": "graphcool-json-schema",
-  "version": "0.4.1",
+  "version": "1.0.0-alpha.1",
   "main": "dist/definition.js",
   "typings": "dist/definition.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "prepublish": "npm run build",
-    "build": "rm -rf dist && tsc -d; cp src/schema.json dist"
+    "build": "rm -rf dist && tsc -d; cp src/schema.json dist",
+    "simple": "ajv -s src/schema.json -d simple.json",
+    "advanced": "ajv -s src/schema.json -d advanced.json"
   },
   "devDependencies": {
+    "ajv-cli": "^2.1.0",
     "typescript": "^2.5.2"
   }
 }
