@@ -48,11 +48,18 @@
         "type": ["string", "array"]
       }
     },
-    "apikey": {
-      "description": "Api key",
+    "secret": {
+      "description": "Secret for securing the API Endpoint",
       "type": "string",
       "items": {
         "type": "string"
+      }
+    },
+    "disableAuth": {
+      "description": "Disable authentication for the endpoint",
+      "type": "boolean",
+      "items": {
+        "type": "boolean"
       }
     },
     "schema": {

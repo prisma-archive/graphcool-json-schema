@@ -1,11 +1,12 @@
 export interface GraphcoolDefinition {
   service: string
   datamodel: string | string[]
-  apikey?: string
   stages: StageMap
   schema?: string
   subscriptions?: SubscriptionMap
   custom?: any
+  secret?: string
+  disableAuth?: boolean
 }
 
 export interface StageMap {
