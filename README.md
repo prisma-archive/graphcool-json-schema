@@ -19,6 +19,18 @@ https://raw.githubusercontent.com/graphcool/graphcool-json-schema/master/src/sch
 const schema = require('graphcool-json-schema/dist/schema.json')
 ```
 
+#### Usage with VSCode
+
+Add the following to your settings:
+
+```json
+{
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/graphcool/graphcool-json-schema/master/src/schema.json": "graphcool.yml"
+  }
+}
+```
+
 
 ### Typescript Definitions
 
@@ -29,5 +41,4 @@ yarn add graphcool-json-schema
 ```ts
 import { GraphcoolDefinition } from 'graphcool-json-schema'
 ```
-
 
