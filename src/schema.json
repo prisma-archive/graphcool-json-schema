@@ -87,5 +87,5 @@
     }
   },
   "additionalProperties": false,
-  "required": ["service", "datamodel"]
+  "required": ["service", "datamodel", "stages"]
 }
