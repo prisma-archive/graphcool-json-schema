@@ -30,6 +30,18 @@
         }
       },
       "required": ["query", "webhook"]
+    },
+    "seed": {
+      "description": "Seed data to initialize a new service",
+      "type": "object",
+      "properties": {
+        "import": {
+          "type": "string"
+        },
+        "run": {
+          "type": "string"
+        }
+      }
     }
   },
   "properties": {
@@ -69,6 +81,13 @@
         "type": "string"
       }
     },
+    "seed": {
+      "description": "Database seed",
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/seed"
+      }
+    },
     "subscriptions": {
       "description": "All server-side subscriptions",
       "type": "object",
@@ -87,5 +106,5 @@
     }
   },
   "additionalProperties": false,
-  "required": ["service", "datamodel"]
+  "required": ["service", "datamodel", "stages"]
 }

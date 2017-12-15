@@ -7,6 +7,12 @@ export interface GraphcoolDefinition {
   custom?: any
   secret?: string
   disableAuth?: boolean
+  seed?: Seed
+}
+
+export interface Seed {
+  ['import']?: string
+  run?: string
 }
 
 export interface StageMap {
