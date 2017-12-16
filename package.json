@@ -1,9 +1,11 @@
 {
   "name": "graphcool-json-schema",
-  "version": "1.0.1-beta.2",
+  "version": "1.0.1-beta.3",
   "main": "dist/definition.js",
   "typings": "dist/definition.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepublish": "npm run build",
     "build": "rm -rf dist && tsc -d; cp src/schema.json dist",
