@@ -30,18 +30,6 @@
         }
       },
       "required": ["query", "webhook"]
-    },
-    "seed": {
-      "description": "Seed data to initialize a new service",
-      "type": "object",
-      "properties": {
-        "import": {
-          "type": "string"
-        },
-        "run": {
-          "type": "string"
-        }
-      }
     }
   },
   "properties": {
@@ -84,8 +72,13 @@
     "seed": {
       "description": "Database seed",
       "type": "object",
-      "additionalProperties": {
-        "$ref": "#/definitions/seed"
+      "properties": {
+        "import": {
+          "type": "string"
+        },
+        "run": {
+          "type": "string"
+        }
       }
     },
     "subscriptions": {
