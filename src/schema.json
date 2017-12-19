@@ -88,10 +88,6 @@
         "$ref": "#/definitions/subscription"
       }
     },
-    "stages": {
-      "description": "Stages map.",
-      "type": "object"
-    },
     "custom": {
       "description":
         "Custom field to use in variable interpolations with ${self:custom.field}",

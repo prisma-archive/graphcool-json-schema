@@ -1,7 +1,6 @@
 export interface GraphcoolDefinition {
   service: string
   datamodel: string | string[]
-  stages: StageMap
   schema?: string
   subscriptions?: SubscriptionMap
   custom?: any
@@ -13,10 +12,6 @@ export interface GraphcoolDefinition {
 export interface Seed {
   ['import']?: string
   run?: string
-}
-
-export interface StageMap {
-  [stageName: string]: string
 }
 
 export interface SubscriptionMap {
