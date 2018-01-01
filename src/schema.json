@@ -69,6 +69,21 @@
         "type": "string"
       }
     },
+    "stage": {
+      "description": "Stage to deploy to. Read more here https://goo.gl/J5k76y",
+      "type": "string",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cluster": {
+      "description":
+        "Cluster used for deployment. Read more here https://goo.gl/J5k76y",
+      "type": "string",
+      "items": {
+        "type": "string"
+      }
+    },
     "seed": {
       "description": "Database seed",
       "type": "object",
@@ -95,5 +110,5 @@
     }
   },
   "additionalProperties": false,
-  "required": ["service", "datamodel"]
+  "required": ["service", "datamodel", "stage"]
 }
