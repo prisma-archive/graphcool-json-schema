@@ -7,6 +7,8 @@ export interface GraphcoolDefinition {
   secret?: string
   disableAuth?: boolean
   seed?: Seed
+  cluster?: string
+  stage: string
 }
 
 export interface Seed {
