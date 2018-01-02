@@ -1,6 +1,8 @@
 # graphcool-json-schema
 JSON schema of graphcool.yml files
 
+[![CircleCI](https://circleci.com/gh/graphcool/graphcool-json-schema.svg?style=shield)](https://circleci.com/gh/graphcool/graphcool-json-schema) [![npm version](https://badge.fury.io/js/graphcool-json-schema.svg)](https://badge.fury.io/js/graphcool-json-schema)
+
 ## Usage
 
 ### JSON Schema
