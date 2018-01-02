@@ -16,5 +16,9 @@
   "devDependencies": {
     "ajv-cli": "^2.1.0",
     "typescript": "^2.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/graphcool/graphcool-json-schema.git"
   }
 }
