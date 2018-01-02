@@ -1,6 +1,6 @@
 {
   "name": "graphcool-json-schema",
-  "version": "0.0.0-semantic-release",
+  "version": "1.1.0",
   "main": "dist/definition.js",
   "typings": "dist/definition.d.ts",
   "files": [
