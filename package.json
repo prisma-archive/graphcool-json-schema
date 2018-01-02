@@ -14,8 +14,8 @@
     "advanced": "ajv -s src/schema.json -d advanced.json"
   },
   "devDependencies": {
-    "ajv-cli": "^2.1.0",
-    "typescript": "^2.5.2"
+    "ajv-cli": "2.1.0",
+    "typescript": "2.6.2"
   },
   "repository": {
     "type": "git",
