@@ -20,5 +20,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/graphcool/graphcool-json-schema.git"
+  },
+  "release": {
+    "branch": "dev"
+  },
+  "publishConfig": {
+    "tag": "next"
   }
 }
