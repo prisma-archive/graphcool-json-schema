@@ -31,10 +31,9 @@ export type FunctionHandlerWebhookSource =
 
 export interface FunctionHandlerWebhookWithHeaders {
   url: string
-  headers?: Header[]
+  headers?: Headers
 }
 
-export interface Header {
-  name: string
-  value: string
+export interface Headers {
+  [key: string]: string
 }
